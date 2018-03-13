@@ -8,9 +8,8 @@
 
 1. 折叠间距的解决
 
-    如果容器和它的子元素都设有margin-top,那么容器本身的margin-top会和第一个子元素的margin-top折叠在一起,导致第一个子元素设置的margin不管用,此时解决办法是给其父元素一个padding为0;这样就可以给元素设置需要的margin值了.
-
-    效果图说明 
+    如果容器和它的子元素都设有margin-top,那么容器本身的margin-top会和第一个子元素的margin-top折叠在一起,导致第一个子元素设置的margin不管用,此时解决办法是给其父元素一个padding为0;这样就可以给元素设置需要的margin值了.<br>
+    效果图说明<br>
     > 头像设置 margin:-70;<br>
     > 设置 padding:0; 之前<br>
     > ![header1.jpg](img/header1.jpg)
@@ -21,7 +20,7 @@
 
     对元素设置display:inline-block;元素会对外表现为行元素,对内表现为块元素,所以自身占据一定空间,而设置float的元素自身是不占用空间的,所以这时其父元素是获取不到其高度的,需要设置overflow:hidden;属性来获取所有内容的高度.
 
-    效果图说明
+    效果图说明<br>
     > 子元素设置了 float 其父元素的表现<br>
     > ![float1.jpg](img/float1.jpg)<br>
     > 父元素设置了 overflow:hidden; 之后 
@@ -42,7 +41,7 @@
 
     对于标题字体过大或过长移动端小屏不能一行显示的标题,让其自动断行的标题会比较不美观,一般采用转义字符来进行强行断行.
 
-    效果图说明
+    效果图说明<br>
     > 自动换行的标题<br>
     > ![header-2.jpg](img/header-2.jpg)<br>
     > 加入转义字符并进行强制换行的标题<br>
