@@ -18,22 +18,21 @@
 
     对元素设置display:inline-block;元素会对外表现为行元素,对内表现为块元素,所以自身占据一定空间,而设置float的元素自身是不占用空间的,所以这时其父元素是获取不到其高度的,需要设置overflow:hidden;属性来获取所有内容的高度.
     > 效果图说明
-    > 子元素设置了 float 其父元素的表现 ![float1.jpg](img/float1.jpg)
-    > 父元素设置了 overflow:hidden; 之后 ![float2.jpg](img/float2.jpg)
-    > 子元素设置了 display:inline-block; 和子元素设置了float:left; 父元素设置了 overflow:hidden; 的元素展示效果 ![inline-block.jpg](img/inline-block.jpg)
+    子元素设置了 float 其父元素的表现 
+    > ![float1.jpg](img/float1.jpg)
+    父元素设置了 overflow:hidden; 之后 
+    > ![float2.jpg](img/float2.jpg)
+    子元素设置了 display:inline-block; 和子元素设置了float:left; 父元素设置了 overflow:hidden; 的元素展示效果 
+    > ![inline-block.jpg](img/inline-block.jpg)
 
 3. :after 设置伪类元素来撑开容器高度以及设置标题下划线等功能
 
     对于子元素设置了浮动等不占用实际空间的容器,是获取不到实际的高度的,这时可以在容器的内部加一个空的伪类元素,来撑起容器的高度.
 
-    > <div class="clearfic"></div>
-    > .clearfix:after{
-    >   content:"";
-    >   display:table;
-    >   clear:both;
-    > }
+    > ```<div class="clearfic"></div>```
+    > .clearfix:after{ content:""; display:table; clear:both; }
 
-    对于标题的下滑线我们除了加一条 ** <hr> ** 实线之外,我们还可以采用伪类元素来进行处理.
+    对于标题的下滑线我们除了加一条 **<hr>** 实线之外,我们还可以采用伪类元素来进行处理.
 
 4. 使用转义字符进行标题断行
 
@@ -43,9 +42,7 @@
     > 自动换行的标题 ![header-2.jpg](img/header-2.jpg)
     > 加入转义字符并进行强制换行的标题 ![header-1.jpg](img/header-1.jpg)
 
-    > <div class="break">EDUCATION <span>&amp;</span> EXPRIENCE</div>
-    > .break{
-    >   word-break:break-all;
-    > }
+    > ```<div class="break">EDUCATION <span>&amp;</span> EXPRIENCE</div>```
+    > .break{ word-break:break-all; }
 
 
