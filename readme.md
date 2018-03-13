@@ -9,6 +9,7 @@
 1. 折叠间距的解决
 
     如果容器和它的子元素都设有margin-top,那么容器本身的margin-top会和第一个子元素的margin-top折叠在一起,导致第一个子元素设置的margin不管用,此时解决办法是给其父元素一个padding为0;这样就可以给元素设置需要的margin值了.<br>
+    
     效果图说明<br>
     > 头像设置 margin:-70;<br>
     > 设置 padding:0; 之前<br>
