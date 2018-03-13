@@ -14,7 +14,7 @@
     > 头像设置 margin:-70;<br>
     > 设置 padding:0; 之前<br><br>
     > ![header1.jpg](img/header1.jpg)
-    > 设置 padding:0; 之后<br>
+    > 设置 padding:0; 之后<br><br>
     > ![header2.jpg](img/header2.jpg)
 
 2. display:inline-block; 布局和 float 布局的区别
