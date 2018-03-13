@@ -66,9 +66,12 @@ body{
     background-color:#fff;
     font-family: 'Open Sans', sans-serif;
 }
+.info-section p{
+    color:#6a6869;
+}
 .info-section header h2{
     margin-bottom:20px;
-    font-size:28px;
+    font-size:27px;
     text-transform:uppercase;
     letter-spacing:3px;
 }
@@ -95,7 +98,7 @@ body{
 .whatido_skill-list li{
     width:33%;
     float:left;
-    margin-top:20px;
+    margin-bottom:40px;
     padding-top:110px;
 }
 .whatido_skill-list h3{
@@ -119,33 +122,45 @@ body{
 .container1{
     padding:30px 60px 30px 280px;
     background:url(../img/c1.jpg) white no-repeat 60px;
-    height:180px;
+    height:190px;
 }
 .container2{
     padding:30px 60px 30px 280px;
     background:url(../img/c2.jpg) white no-repeat 60px;
-    height:180px;
+    height:190px;
 }
 .container3{
     padding:30px 60px 30px 280px;
     background:url(../img/c3.jpg) white no-repeat 60px;
-    height:180px;
+    height:190px;
 }
 .content{
     overflow:hidden;
+    text-align:left;
+}
+.content h4{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:18px;
 }
 .content-p1{
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 .photos{
-    padding:60px 30px 60px 30px;
+    padding:60px 10px 60px 10px;
+}
+.photos img{
+    width:200px;
+    margin:5px;
 }
 .touch li{
     float:left;
     width:25%;
     margin-top:40px;
     padding-top:180px;
+}
+.touch li p{
+    color:black;
 }
 .touch-facebook{
     background:url(../img/l1.jpg) no-repeat center top;
@@ -180,13 +195,15 @@ body{
     left:8px;
 }
 .last-section{
-    padding:60px 0 60px 0;
+    padding:60px 10px 60px 10px;
 }
 .form-box p{
     text-align:right;
     line-height:60px;
 }
 .form-right{
+    width:310px;
+    margin:0 auto;
     text-align:right;
 }
 .form-right input{
@@ -213,11 +230,16 @@ body{
     border-radius:20px;
     color:white;
     font-size:18px;
+    text-shadow:0 1px 1px rgba(0,0,0,0.2);
+    box-shadow:0 3px 0 #daae1d;
     cursor:pointer;
 }
 @media only screen and (max-width:480px){
     .max-box{
         width:100%;
+    }
+    .info-section{
+        padding:50px 10px 50px 10px;
     }
     .main-nav ul li{
         width:100%;
@@ -228,23 +250,71 @@ body{
     .whatido_skill-list li{
         width:100%;
     }
+    .photos img{
+        width:340px;
+        margin:0;
+        margin-top:15px;
+    }
     .touch li{
-        width:100%;
+        width:50%;
     }
     .content{
         overflow:hidden;
         width:100%;
+        height:190px;
+        text-align:left;
+    }
+    .hh{
+        width:200px;
+        margin:0 auto;
+        word-wrap: break-word; 
+        word-break: normal;
+        line-height:36px;
     }
     .container1{
-        padding:180px 60px 0 60px;
+        padding:180px 10px 0 10px;
+        margin-top:60px;
+        height:250px;
         background:url(../img/c1.jpg) white no-repeat center top;
     }
     .container2{
-        padding:180px 60px 0 60px;
+        padding:180px 10px 0 10px;
+        height:250px;
         background:url(../img/c2.jpg) white no-repeat center top;
     }
     .container3{
-        padding:180px 60px 0 60px;
+        padding:180px 10px 0 10px;
+        height:230px;
         background:url(../img/c3.jpg) white no-repeat center top;
+    }
+    .form-right{
+        width:100%;
+        padding-top:20px;
+    }
+    .form-right input{
+        width:100%;
+        margin-top:30px;
+        margin-bottom:10px;
+    }
+    .form-right textarea{
+        width:100%;
+        margin-top:30px;
+        margin-bottom:20px;
+    }
+    .name{
+        top:28px;
+        left:0;
+    }
+    .email{
+        top:100px;
+        left:0;
+    }
+    .message{
+        top:170px;
+        left:0;
+    }
+    .form-right .tj{
+        width:100%;
+        margin-top:0;
     }
 }
