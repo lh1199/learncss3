@@ -32,15 +32,17 @@
     > ```<div class="clearfic"></div>```
     > .clearfix:after{ content:""; display:table; clear:both; }
 
-    对于标题的下滑线我们除了加一条 **<hr>** 实线之外,我们还可以采用伪类元素来进行处理.
+    对于标题的下滑线我们除了加一条 ```<hr>``` 实线之外,我们还可以采用伪类元素来进行处理.
 
 4. 使用转义字符进行标题断行
 
     对于标题字体过大或过长移动端小屏不能一行显示的标题,让其自动断行的标题会比较不美观,一般采用转义字符来进行强行断行.
 
     > 效果图说明
-    > 自动换行的标题 ![header-2.jpg](img/header-2.jpg)
-    > 加入转义字符并进行强制换行的标题 ![header-1.jpg](img/header-1.jpg)
+    自动换行的标题 
+    > ![header-2.jpg](img/header-2.jpg)
+    加入转义字符并进行强制换行的标题 
+    > ![header-1.jpg](img/header-1.jpg)
 
     > ```<div class="break">EDUCATION <span>&amp;</span> EXPRIENCE</div>```
     > .break{ word-break:break-all; }
